@@ -1,30 +1,11 @@
-function addMessage() {
-    // Get the message of the new message
-    let message = document.getElementById("new_message");
+//Inform user submit message successful or not by pop up window
+function submitMessage() {
+    // Get the message
+    var messageArea = document.getElementById("message");
+    var message = messageArea.value.trim(); //remove leading and tailing whitespace
     // If the user has left a message, display a pop-up
-    if (message.value != null && message.value.trim() != "") {
-      console.log("New message added");
-      //Call showPopup
-      showPopup(true);
-  
-      // Create a new 'recommendation' element and set it's value to the user's message
-      var element = document.createElement("div");
-      element.setAttribute("class","messages");
-      element.innerHTML = "\<span\>&#8220;\</span\>" + message.value + "\<span\>&#8221;\</span\>";
-      // Add this element to the end of the list of messages
-      document.getElementById("all_messages").appendChild(element); 
-      
-      // Reset the value of the textarea
-      recommendation.value = "";
-      showPopup(true);
+    if(message === ""){
+      alert("Message area is empty. Please submit another request");
     }
-  }
-  
-  function showPopup(bool) {
-    if (bool) {
-      document.getElementById('popup').style.visibility = 'visible'
-    } else {
-      document.getElementById('popup').style.visibility = 'hidden'
-    }
-  }
+}
   
