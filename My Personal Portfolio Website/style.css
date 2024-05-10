@@ -31,7 +31,6 @@ body {
   
   .topmenu:hover {
     color: purple;
-    /* Add the styles here */
   }
   
   .topdiv {
@@ -57,13 +56,7 @@ body {
     flex-direction: row;
   }
   
-  /* .contact_info img {
-    width:50px;
-    margin-right: 10px;
-    float:left;
-  } */
-  
-  /* Titles */
+  /* Skills */
   
   h2 {
     text-align: justify;
@@ -75,17 +68,6 @@ body {
     margin-left: 60px;
     margin-top: 40px;
     margin-bottom: 0px;
-  }
-  
-  .introduction {
-    text-align: justify;
-    font-size: 30px;
-    text-align: center;
-    float: left;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    animation-duration: 5s;
-    position: relative;
   }
   
   /* Used in the About Me sections */
@@ -139,7 +121,6 @@ body {
   
   .skill {
     border: px solid gray;
-    /* display: block; */
     border-radius: 30px;
     text-align: center;
     margin: 20px;
@@ -157,7 +138,7 @@ body {
     align-items: center;
   }
   
-  .skills h6 {
+  .skills h4 {
     align-items: center;
     font-size: 20px;
     margin-block-start: 8px;
@@ -187,15 +168,13 @@ body {
   }
   
   .projects-container hr {
-    border: 1px solid lightgray;
     width: 75%;
     margin-left: 5cm;
   }
   
   .project-card {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 150px;
-    margin: 0 15px 15px 30px;
+    padding-left: 160px;
     padding-bottom: 5px;
   }
   
@@ -209,38 +188,65 @@ body {
     margin-left: 30px;
   }
   
-  /* Recommendations */
+  /* Contact me */
   
-  .all_messages {
+  #contact {
     display: flex;
     align-items: center;
-    margin-left: 1in;
-    flex-direction: row;
-    flex-flow: wrap;
-    padding: 20px;
+    flex-direction: column;
+    padding: 200px;
   }
-  
-  .message {
-    font-style: italic;
-    text-align: left;
-    width: 21.875rem;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
-    /* border:1px solid gray; */
-    font-size: 18px;
-    height:150px
+
+  /* form format*/
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
   }
-  
-  .message span {
+
+  /* form header*/
+  form h5 {
     color: #7600bc;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size:30px;
+    font-weight:bold;
+  }
+
+  /* form input box*/
+  form input { 
+    background:#f5f5f5;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 18px;
+    height:35px;
+    width: 600px;
+    border-color:black;
+    border-width: 2px;
+  }
+  /* form message box*/
+  form textarea { 
+    background:#f5f5f5;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 18px;
+    width:600px;
+    height:200px;
+    border-color:black;
+    border-width: 2px;
   }
   
+  form button {
+    background-color: #7600bc;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+
   /* Scroll to Top Button */
   
   .iconbutton{
@@ -254,93 +260,5 @@ body {
     position: fixed;
     right: 3%;
     bottom: 3%;
-    cursor: pointer;
-  }
-  
-  /* Form Pop-up */
-  
-  .popup {
-    width:400px;
-    background-color: #e8bcf0;
-    border-radius: 3mm;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    position: fixed;
-    /* padding: 30px; */
-    visibility: hidden;
-  }
-  
-  .popup img {
-    padding-top: 20px;
-  }
-  
-  .popup button {
-    background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    margin: 50px;
-    padding: 10px;
-    width: 2in;
-    font-size: 20px;
-    margin-left: 25%;
-  }
-  
-  .popup button:hover {
-    background-color: #fff;
-    border: 2px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    font-weight: bolder;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 25%;
-  }
-  
-  /* Recommendation Form */
-  
-  input, textarea {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    margin: 10px;  
-    width:100%;
-  }
-  
-  fieldset {
-    display: flexbox;
-    align-content: center;
-    justify-content: center;  
-    padding: 25px; 
-    margin-left: 50px; 
-    margin-right: 50px;   
-    border: thin solid white;
-    width: 50%;
-  }
-  
-  /* Buttons */
-  
-  button {
-    background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    margin: 50px;
-    padding: 10px;
-    width: 2in;
-    font-size: 20px;
-  }
-  
-  button:hover {
-    background-color: #7600bc;
-    border: 1px solid #7600bc;
-    color: #fff;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
     cursor: pointer;
   }

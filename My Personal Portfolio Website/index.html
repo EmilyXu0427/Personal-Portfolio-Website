@@ -22,7 +22,7 @@
           <a class="topmenu" href="#about-me">About Me</a>
           <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#messages">Messages</a>
+          <a class="topmenu" href="#contact">Contact</a>
         </div>
       </div>    
     </nav>
@@ -39,7 +39,7 @@
           </h1>
           <p>
             I am a 3rd year UBC BSC student.
-            I used to work as Food Reserch & Technologist but decided to make a career transition into Computer Science. 
+            I used to work as Food Reserch & Technologist. In 2023, I decided to make a career transition to Computer Science. 
             My interests are hiking, swimming, programming and food!
           </p>
       </div>
@@ -51,48 +51,45 @@
       <div style="clear:both;"></div>
 
       <div class="all_skills">
-        
-
-        <!-- Add more skills here --> 
 
         <div class="skill">
             <img src="html_finalprojimages/python.png"/>
-            <h6>Python</h6>
+            <h4>Python</h4>
         </div>  
 
         <div class="skill">
             <img src="html_finalprojimages/Java.png"/>
-            <h6>Java</h6>
+            <h4>Java</h4>
         </div> 
 
         <div class="skill">
           <img src="html_finalprojimages/SQL.png"/>
-          <h6>SQL</h6>
+          <h4>SQL</h4>
         </div>  
 
         <div class="skill">
             <img src="html_finalprojimages/html5.png"/>
-            <h6>HTML</h6>
+            <h4>HTML</h4>
           </div>  
   
         <div class="skill">
             <img src="html_finalprojimages/js.jpeg"/>
-            <h6>JavaScript</h6>
+            <h4>JavaScript</h4>
         </div> 
 
         <div class="skill">
             <img src="html_finalprojimages/CSS3.png"/>
-            <h6>CSS</h6>
+            <h4>CSS</h4>
         </div>  
 
         <div class="skill">
             <img src="html_finalprojimages/C.png"/>
-            <h6>C</h6>
+            <h4>C</h4>
         </div>  
 
         <div class="skill">
             <img src="html_finalprojimages/C++.png"/>
-            <h6>C++</h6>
+            <h4>C++</h4>
         </div>  
         
 
@@ -124,31 +121,23 @@
               <li>Created an interactive dashboard using HTML to visualize information of interest</li>
             </ul>
           </div>
-          <hr>
-          
+          <hr>     
         </div>
     </section>
     <div style="clear:both;"></div>
 
-    <!-- Messages -->
-    <section id="messages">
-      <div style="clear:both;"></div>
-      <div class="all_messages" id="all_messages">
-        <div class="messages">
-        </div>
-    </section>
-
-    <!-- Leave a message Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave me a message</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_message" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="submit_btn" onclick="addMessage()">Submit</button>
-          </div>
-        </fieldset>
+    <!-- Contact me Form -->
+    <section id="contact"> 
+      <div>
+        <form> 
+          <h5> Contact me</h5>      
+          <hr>
+          <input type="text" placeholder="Name" required> <br/>
+          <input type="text" placeholder="Email" required> <br/>
+          <input type="text" placeholder="Phone number" required> <br/>
+          <textarea id="message" rows="10" placeholder="Enter your message here"></textarea>
+          <button id="submit_btn">Submit</button>
+        </form>
       </div>
     </section>
 
